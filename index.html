@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>She Can Foundation</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            line-height:1.6;
+            color:#333;
+        }
+
+        /* Navbar */
+        nav{
+            background:#8e44ad;
+            color:white;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:15px 8%;
+        }
+
+        nav h2{
+            font-size:28px;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:20px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        /* Hero Section */
+        .hero{
+            background:linear-gradient(rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)),
+            url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200");
+            background-size:cover;
+            background-position:center;
+            color:white;
+            text-align:center;
+            padding:120px 20px;
+        }
+
+        .hero h1{
+            font-size:50px;
+            margin-bottom:15px;
+        }
+
+        .hero p{
+            font-size:20px;
+            max-width:700px;
+            margin:auto;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:25px;
+            padding:12px 25px;
+            background:#f39c12;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#d68910;
+        }
+
+        /* About Section */
+        .about{
+            padding:60px 10%;
+            text-align:center;
+        }
+
+        .about h2{
+            color:#8e44ad;
+            margin-bottom:20px;
+        }
+
+        .about p{
+            max-width:900px;
+            margin:auto;
+            font-size:18px;
+        }
+
+        /* Image Section */
+        .image-section{
+            padding:20px 10%;
+            text-align:center;
+        }
+
+        .image-section img{
+            width:100%;
+            max-width:800px;
+            border-radius:12px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        /* Join Section */
+        .join{
+            background:#f4f4f4;
+            text-align:center;
+            padding:60px 20px;
+        }
+
+        .join h2{
+            margin-bottom:15px;
+            color:#8e44ad;
+        }
+
+        /* Footer */
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        @media(max-width:768px){
+            .hero h1{
+                font-size:35px;
+            }
+
+            nav{
+                flex-direction:column;
+                gap:10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2>She Can Foundation</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#join">Join Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <h1>Empowering Women, Inspiring Change</h1>
+
+        <p>
+            She Can Foundation is dedicated to creating opportunities,
+            building confidence, and supporting women and students in
+            achieving their dreams through education, mentorship,
+            and community initiatives.
+        </p>
+
+        <a href="#join" class="btn">Become a Volunteer</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+
+        <p>
+            At She Can Foundation, we believe every individual deserves
+            access to opportunities that help them grow and succeed.
+            Our mission is to empower women through education, skill
+            development, leadership programs, and community support.
+            Together, we create a future where everyone has the confidence
+            to say, "Yes, I Can."
+        </p>
+    </section>
+
+    <!-- Image Section -->
+    <section class="image-section">
+        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200"
+             alt="Women Empowerment">
+    </section>
+
+    <!-- Join Us Section -->
+    <section class="join" id="join">
+        <h2>Join Our Mission</h2>
+
+        <p>
+            Be a part of positive change. Volunteer with us and help
+            empower communities through education and support.
+        </p>
+
+        <a href="#" class="btn">Join Us Today</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 She Can Foundation | Together We Grow</p>
+    </footer>
+
+</body>
+</html>
